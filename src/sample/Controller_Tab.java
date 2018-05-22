@@ -12,7 +12,7 @@ import java.util.ResourceBundle;
 
 public class Controller_Tab implements Initializable {
 
-    Aufgabe tabAufgabe;
+    ParentAufgabe tabAufgabe;
 
     @FXML
     ImageView iv_task;
@@ -26,8 +26,8 @@ public class Controller_Tab implements Initializable {
 
     }
 
-    public void setTabAufgabe(Aufgabe newAufgabe){
-        this.tabAufgabe = newAufgabe;
+    public void setTabAufgabe(ParentAufgabe newParentAufgabe){
+        this.tabAufgabe = newParentAufgabe;
     }
 
     public void displayImage(){
@@ -37,7 +37,7 @@ public class Controller_Tab implements Initializable {
     public void displayInputMask(){
         VBox tfBox = new VBox();
 
-
+        // TODO Fill with ChildAufgaben
 
         ap_inputMask.getChildren().setAll(tfBox);
     }

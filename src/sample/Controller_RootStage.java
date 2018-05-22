@@ -62,9 +62,9 @@ public class Controller_RootStage {
 
     }
 
-    private void CreateTab(Aufgabe aufgabe) throws Exception{
+    private void CreateTab(ParentAufgabe parentAufgabe) throws Exception{
         Tab newTab = new Tab();                 // Tab zur Anzeige der Aufgabe
-        newTab.setText(aufgabe.getTitle());
+        newTab.setText(parentAufgabe.getTitle());
         AnchorPane newAP = new AnchorPane();    // AnchorPane zur richtigen Skallierung
         newTab.setContent(newAP);
         FXMLLoader content = new FXMLLoader(getClass().getResource("Layout_Tab.fxml"));
@@ -72,7 +72,7 @@ public class Controller_RootStage {
 
         tp_main.getTabs().add(newTab);
         Controller_Tab newController = content.getController();
-        newController.setTabAufgabe(aufgabe);
+        newController.setTabAufgabe(parentAufgabe);
         newController.displayImage();
         myTabController.add(newController);
 
@@ -99,8 +99,8 @@ public class Controller_RootStage {
 
 
                             // Erstelle für jede Aufgabe einen Tab
-                            for(Aufgabe aufgabe : GetVersuchByTitle(((MenuItem) source).getText()).getAufgaben()){
-                                CreateTab(aufgabe);
+                            for(ParentAufgabe PA : GetVersuchByTitle(((MenuItem) source).getText()).getParentAufgaben()){
+                                CreateTab(PA);
                             }
                         } catch(Exception e){
                             System.out.println("Fehler beim erstellen des Tabs!\n" + e.toString());
@@ -165,7 +165,7 @@ public class Controller_RootStage {
             List<String> metaSplitList;
 
             Image newImage = null;
-            Aufgabe newAufgabe = null;
+            ParentAufgabe newParentAufgabe = null;
 
 
             while ((sCurrentLine = br.readLine()) != null){
@@ -177,12 +177,12 @@ public class Controller_RootStage {
 
                     metaSplitList = Arrays.asList(sCurrentLine.split(","));
 
-                    newAufgabe = new Aufgabe(metaSplitList.get(2));     // Erstelle neue Aufgabe mit Titel
+                    newParentAufgabe = new ParentAufgabe(metaSplitList.get(2));     // Erstelle neue Aufgabe mit Titel
                     if(!metaSplitList.get(3).equals("NOIMAGE")){        // Suche nach Bild für die Aufgabe
                         newImage = LoadImageByName(metaSplitList.get(3));
                     }
-                    newAufgabe.setImage(newImage);                          // Setze Bild für die Aufgabe
-                    aVersuch.addAufgabe(newAufgabe);                        // Füge Aufgabe hinzu
+                    newParentAufgabe.setImage(newImage);                          // Setze Bild für die Aufgabe
+                    aVersuch.addParentAufgabe(newParentAufgabe);                        // Füge Aufgabe hinzu
                 }
             }
             br.close();
@@ -201,15 +201,17 @@ public class Controller_RootStage {
             List<String> metaSplitList;
 
 
-            for(Aufgabe currentA : aVersuch.getAufgaben()){                  // Suche für jede Aufgabe nach Loesung
+            for(ParentAufgabe currentPA : aVersuch.getParentAufgaben()){                  // Suche für jede Aufgabe nach Loesung
                 while ((sCurrentLine = br.readLine()) != null){
                     if(sCurrentLine.contains(aVersuch.getTitle())                  // Aktueller Versuch
                             && sCurrentLine.contains("TASK")                // Zeile beschreibt Aufgabe
                             && !sCurrentLine.contains("#")                  // Zeile ist kein Kommentar
-                            && sCurrentLine.contains(currentA.getTitle())){ // Zeile gibt informationen über Aufgabe
+                            && sCurrentLine.contains(currentPA.getTitle())){ // Zeile gibt informationen über Aufgabe
 
                         metaSplitList = Arrays.asList(sCurrentLine.split(","));
-                        currentA.setLoesung(metaSplitList.get(3));
+
+                        // TODO Add ChildAufgabe with Loesung
+
                     }
                 }
                 fin.getChannel().position(0);                               // Reset Position of the FileInputStram

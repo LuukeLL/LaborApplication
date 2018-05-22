@@ -8,38 +8,41 @@ import java.util.List;
 public class Versuch {
 
     private String title;
-    private List<Aufgabe> aufgaben;
+    private List<ParentAufgabe> parentAufgaben;
 
     public Versuch(){
-        this.aufgaben = new ArrayList<>();
+        this.parentAufgaben = new ArrayList<>();
         this.title = "NoName";
     }
 
     public Versuch(String newtitle){
-        this.aufgaben = new ArrayList<>();
+        this.parentAufgaben = new ArrayList<>();
         this.title = newtitle;
     }
 
-    public void addAufgabe(Aufgabe newAufgabe)
+    public void addParentAufgabe(ParentAufgabe newParentAufgabe)
     {
-        aufgaben.add(newAufgabe);
+        parentAufgaben.add(newParentAufgabe);
     }
 
-    public Aufgabe getAufgabeIndex(String title){
-        for(int index = 0; index < aufgaben.size(); index++){
-            if(aufgaben.get(index).equals(title)){
-                return aufgaben.get(index);
-            }
+    public void addChildAufgabeToParent(String parentTitle, ChildAufgabe aChildAufgabe){
+        getParentAufgabeByTitle(parentTitle).AddChildAufgabe(aChildAufgabe);
+    }
+
+    public ParentAufgabe getParentAufgabeByTitle(String title){
+        for(ParentAufgabe aParentAufgabe : parentAufgaben){
+            if(aParentAufgabe.equals(title))
+                return aParentAufgabe;
         }
         return null;
     }
 
-    public List<Aufgabe> getAufgaben(){
-        return aufgaben;
+    public List<ParentAufgabe> getParentAufgaben(){
+        return parentAufgaben;
     }
 
-    public Aufgabe getAufgabeAtIndex(int index){
-        return aufgaben.get(index);
+    public Aufgabe getParentAufgabeAtIndex(int index){
+        return parentAufgaben.get(index);
     }
 
     public String getTitle(){ return this.title; }
