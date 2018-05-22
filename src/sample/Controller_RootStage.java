@@ -20,24 +20,36 @@ import java.util.List;
 
 public class Controller_RootStage {
 
+
+    // region Class Members
     private String DATAPATH;
     private List<Versuch> versuche;
     private List<Controller_Tab> myTabController;
+    // endregion
 
+    // region Predefined indexes for the Textfile
+    private static final int TITLE = 2;
+    private static final int IMAGE_NAME = 3;
+    private static final int LOESUNG = 3;
+    // endregion
+
+    // region Accessible Nodes from the FXML-File
     @FXML
     protected Menu menu_Versuche;
     @FXML
     protected TabPane tp_main;
     @FXML
-    protected Button btn_zurücksetzen;
+    protected Button btn_check;
     @FXML
-    protected Button btn_überprüfen;
+    protected Button btn_reset;
+    // endregion
 
     public void initialize(){
 
         DATAPATH = "EMPTY";
         versuche = new ArrayList<>();
         myTabController = new ArrayList<>();
+
 
         // TODO Replace this with something more dynamic
         DATAPATH = GetFilepathFromResource("tasks.txt");
@@ -74,6 +86,7 @@ public class Controller_RootStage {
         Controller_Tab newController = content.getController();
         newController.setTabAufgabe(parentAufgabe);
         newController.displayImage();
+        newController.displayInputMask();
         myTabController.add(newController);
 
     }
@@ -177,9 +190,9 @@ public class Controller_RootStage {
 
                     metaSplitList = Arrays.asList(sCurrentLine.split(","));
 
-                    newParentAufgabe = new ParentAufgabe(metaSplitList.get(2));     // Erstelle neue Aufgabe mit Titel
-                    if(!metaSplitList.get(3).equals("NOIMAGE")){        // Suche nach Bild für die Aufgabe
-                        newImage = LoadImageByName(metaSplitList.get(3));
+                    newParentAufgabe = new ParentAufgabe(metaSplitList.get(TITLE));     // Erstelle neue Aufgabe mit Titel
+                    if(!metaSplitList.get(IMAGE_NAME).equals("NOIMAGE")){        // Suche nach Bild für die Aufgabe
+                        newImage = LoadImageByName(metaSplitList.get(IMAGE_NAME));
                     }
                     newParentAufgabe.setImage(newImage);                          // Setze Bild für die Aufgabe
                     aVersuch.addParentAufgabe(newParentAufgabe);                        // Füge Aufgabe hinzu
@@ -210,7 +223,13 @@ public class Controller_RootStage {
 
                         metaSplitList = Arrays.asList(sCurrentLine.split(","));
 
-                        // TODO Add ChildAufgabe with Loesung
+
+                        // Füge ChildAufgaben zu der ParentAufgabe hinzu
+                        ChildAufgabe newChild = new ChildAufgabe(metaSplitList.get(TITLE));
+                        for(int index = LOESUNG; index < (metaSplitList.size()-1); index++){
+                            newChild.addLoesung(metaSplitList.get(index));
+                        }
+                        currentPA.AddChildAufgabe(newChild);
 
                     }
                 }
@@ -241,6 +260,16 @@ public class Controller_RootStage {
     private String GetFilepathFromResource(String fileName) {
         Object taskFile = getClass().getResource(fileName);
         return ((URL) taskFile).getPath();
+    }
+
+    @FXML
+    protected void onBTN_Check_Clicked(){
+        
+    }
+
+    @FXML
+    protected void onBTN_Reset_Clicked(){
+
     }
 
 }

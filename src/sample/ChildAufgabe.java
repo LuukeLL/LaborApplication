@@ -1,16 +1,35 @@
 package sample;
 
+import javafx.scene.control.TextField;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class ChildAufgabe extends Aufgabe {
 
-    private String loesung;
+    private List<String> loesungen;
     private Aufgabe parentAufgabe;      // TODO Maybe not usefull
+    private TextField eingabeTF;
 
-    public ChildAufgabe(String newTitle, String newLoesung){
+    public ChildAufgabe(String newTitle){
         super(newTitle);
-        this.loesung = newLoesung;
+        loesungen = new ArrayList<>();
     }
 
-    public String getLoesung(){ return this.loesung; }
-    public void setLoesung(String newLoesung) { this.loesung = newLoesung; }
+    public List<String> getLoesungen(){ return this.loesungen; }
+    public void addLoesung(String newLoesung) { this.loesungen.add(newLoesung); }
 
+    public boolean checkLoesung(String newTry){
+        if(loesungen.contains(newTry))
+            return true;
+        else
+            return false;
+    }
+
+    public boolean checkLoesungFromTF(){
+        if(checkLoesung(eingabeTF.getText()))
+            return true;
+        else
+            return false;
+    }
 }
