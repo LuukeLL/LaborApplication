@@ -28,4 +28,8 @@ public class Controller_Tab implements Initializable {
     public void displayImage(){
         iv_task.setImage(tabAufgabe.getImage());
     }
+
+    public void displayInputMask(){
+
+    }
 }

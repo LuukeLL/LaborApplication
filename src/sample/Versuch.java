@@ -42,4 +42,5 @@ public class Versuch {
         return aufgaben.get(index);
     }
 
+    public String getTitle(){ return this.title; }
 }

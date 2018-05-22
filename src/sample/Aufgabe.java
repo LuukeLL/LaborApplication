@@ -6,7 +6,7 @@ import javafx.scene.image.Image;
 
 public class Aufgabe {
     String title;
-    String loesung;
+    String loesung;                     // TODO Mehrere Loseungen ermöglichen.
     Image image;
 
     public Aufgabe(String newtitle, String newloesung){
