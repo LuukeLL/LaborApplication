@@ -1,0 +1,25 @@
+# STEP 1: Defining Tasks----------------------------------------------------------------------
+# Syntax: <Versuchsname>,IMAGE,<Aufgabenname>,<Bildname> or NOIMAGE
+# STEP 2: Defining Subtasks and Solutions ----------------------------------------------------
+# Syntax: <Versuchsname>,<INTEGER!Aufgabennummer>,<Unteraufgabenname>,<Loesung>
+
+VERSUCHE,V1,V2
+
+# STEP 1
+# VERSUCH_1-----------------------------------------------------------------------------------
+V1,IMAGE,A1,layout.png
+V1,IMAGE,A2,loremipsum.png
+V1,IMAGE,A3,NOIMAGE
+
+# VERSUCH_2-----------------------------------------------------------------------------------
+V2,IMAGE,A1,maze.png
+
+
+
+
+# STEP 2
+# VERSUCH_1-----------------------------------------------------------------------------------
+V1,TASK,A1a,Solution1
+V1,TASK,A1b,Solution2
+V1,TASK,A2a,Solution3
+V2,TASK,A1a,Solution4
