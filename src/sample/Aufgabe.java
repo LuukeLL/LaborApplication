@@ -5,9 +5,11 @@ import javafx.scene.image.Image;
 
 
 public class Aufgabe {
-    String title;
-    String loesung;                     // TODO Mehrere Loseungen ermöglichen.
-    Image image;
+    protected String title;
+    protected String loesung;                     // TODO Mehrere Loseungen ermöglichen.
+    private Image image;
+
+
 
     public Aufgabe(String newtitle, String newloesung){
         this.title = newtitle;
@@ -31,6 +33,10 @@ public class Aufgabe {
 
     public void setLoesung(String newLoesung){
         this.loesung = newLoesung;
+    }
+
+    public String getLoesung(){
+        return this.loesung;
     }
 
     public Image getImage(){

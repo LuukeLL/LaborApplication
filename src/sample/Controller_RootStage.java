@@ -52,7 +52,9 @@ public class Controller_RootStage {
         for(Versuch myVersuch : versuche){
             LoadAufgaben(myVersuch);
             LoadLoesungen(myVersuch);
+
         }
+
 
         // Erstelle die MenuItems und die entsprechenden EventHandler
         CreateMenuHandlers();
@@ -176,7 +178,6 @@ public class Controller_RootStage {
                     metaSplitList = Arrays.asList(sCurrentLine.split(","));
 
                     newAufgabe = new Aufgabe(metaSplitList.get(2));     // Erstelle neue Aufgabe mit Titel
-
                     if(!metaSplitList.get(3).equals("NOIMAGE")){        // Suche nach Bild für die Aufgabe
                         newImage = LoadImageByName(metaSplitList.get(3));
                     }
