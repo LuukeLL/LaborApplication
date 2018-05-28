@@ -73,21 +73,10 @@
       <file leaf-file-name="Controller_RootStage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller_RootStage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="267" column="5" lean-forward="true" selection-start-line="267" selection-start-column="5" selection-end-line="267" selection-end-column="5" />
+            <state relative-caret-position="717">
+              <caret line="305" column="5" lean-forward="true" selection-start-line="305" selection-start-column="5" selection-end-line="305" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="n#!!doc;n#DATAPATH#0;n#Controller_RootStage#0" />
-                <element signature="method#initialize#0;class#Controller_RootStage#0" />
-                <element signature="method#CreateTab#0;class#Controller_RootStage#0" />
-                <element signature="method#CreateMenuHandlers#0;class#Controller_RootStage#0" />
-                <element signature="method#LoadVersuchsNamen#0;class#Controller_RootStage#0" />
-                <element signature="method#CreateVersuch#0;class#Controller_RootStage#0" />
-                <element signature="method#GetVersuchByTitle#0;class#Controller_RootStage#0" />
-                <element signature="method#LoadAufgaben#0;class#Controller_RootStage#0" />
-                <element signature="method#LoadLoesungen#0;class#Controller_RootStage#0" />
-                <element signature="method#LoadImageByName#0;class#Controller_RootStage#0" />
-                <element signature="method#GetFilepathFromResource#0;class#Controller_RootStage#0" />
               </folding>
             </state>
           </provider>
@@ -96,43 +85,8 @@
       <file leaf-file-name="Controller_Tab.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller_Tab.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#706#707#0" expanded="true" />
-                <element signature="e#752#753#0" expanded="true" />
-                <element signature="method#displayImage#0;class#Controller_Tab#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Layout_Tab.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Layout_Tab.fxml">
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Layout_RootStage.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Layout_RootStage.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="45" column="25" lean-forward="true" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tasks.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/tasks.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+            <state relative-caret-position="969">
+              <caret line="74" column="63" selection-start-line="74" selection-start-column="63" selection-end-line="74" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -140,26 +94,33 @@
       <file leaf-file-name="Versuch.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Versuch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+            <state relative-caret-position="510">
+              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#Versuch#0;class#Versuch#0" />
-                <element signature="method#Versuch#1;class#Versuch#0" />
-                <element signature="method#getParentAufgabeByTitle#0;class#Versuch#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Layout_RootStage.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Layout_RootStage.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="46" column="25" lean-forward="true" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
       <file leaf-file-name="Aufgabe.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Aufgabe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="21" column="68" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
+            <state relative-caret-position="255">
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
               <folding>
-                <element signature="e#251#252#0" expanded="true" />
-                <element signature="e#288#289#0" expanded="true" />
+                <element signature="e#144#145#0" expanded="true" />
+                <element signature="e#181#182#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -168,12 +129,8 @@
       <file leaf-file-name="ParentAufgabe.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/ParentAufgabe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#getChildByTitle#0;class#ParentAufgabe#0" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -182,11 +139,16 @@
         <entry file="file://$PROJECT_DIR$/src/sample/ChildAufgabe.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
-              <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#checkLoesung#0;class#ChildAufgabe#0" />
-              </folding>
+              <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tasks.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/tasks.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -223,17 +185,17 @@
         <option value="$PROJECT_DIR$/src/sample/ParentAufgabe.java" />
         <option value="$PROJECT_DIR$/src/sample/Versuch.java" />
         <option value="$PROJECT_DIR$/src/sample/Layout_Tab.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/Layout_RootStage.fxml" />
         <option value="$PROJECT_DIR$/src/sample/Controller_Tab.java" />
         <option value="$PROJECT_DIR$/src/sample/ChildAufgabe.java" />
-        <option value="$PROJECT_DIR$/src/sample/Layout_RootStage.fxml" />
         <option value="$PROJECT_DIR$/src/sample/Controller_RootStage.java" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-20" />
-    <option name="y" value="-26" />
+    <option name="x" value="57" />
+    <option name="y" value="31" />
     <option name="width" value="1874" />
     <option name="height" value="1096" />
   </component>
@@ -268,8 +230,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -399,7 +361,8 @@
     <option name="totallyTimeSpent" value="1302000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1864" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1874" height="1216" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -409,31 +372,31 @@
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22797456" />
       <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25678498" />
       <window_info anchor="bottom" id="Terminal" order="13" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.22283813" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32985386" />
-      <window_info id="Learn" order="6" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.22282024" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32970026" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
       <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3996367" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="JetGradle" order="5" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="bottom" id="Changes" order="7" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Learn" order="6" />
       <window_info anchor="bottom" id="Profiler" order="9" />
       <window_info anchor="bottom" id="Problems" order="10" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Application Servers" order="11" />
+      <window_info anchor="right" id="Database" order="6" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -465,30 +428,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Controller_Tab.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/tasks.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Versuch.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#706#707#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="method#displayImage#0;class#Controller_Tab#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Layout_Tab.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+    <entry file="file://$PROJECT_DIR$/src/sample/Aufgabe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <folding>
+            <element signature="e#144#145#0" expanded="true" />
+            <element signature="e#181#182#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Layout_RootStage.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller_RootStage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="133" selection-start-line="50" selection-start-column="133" selection-end-line="50" selection-end-column="133" />
+        <state relative-caret-position="1139">
+          <caret line="244" lean-forward="true" selection-start-line="244" selection-end-line="244" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller_Tab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -505,8 +501,6 @@
           <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -516,8 +510,8 @@
         <state relative-caret-position="493">
           <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
           <folding>
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#144#145#0" expanded="true" />
+            <element signature="e#181#182#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -528,17 +522,6 @@
           <caret line="61" column="63" selection-start-line="61" selection-start-column="63" selection-end-line="61" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="n#!!doc;n#DATAPATH#0;n#Controller_RootStage#0" />
-            <element signature="method#initialize#0;class#Controller_RootStage#0" />
-            <element signature="method#CreateTab#0;class#Controller_RootStage#0" />
-            <element signature="method#CreateMenuHandlers#0;class#Controller_RootStage#0" />
-            <element signature="method#LoadVersuchsNamen#0;class#Controller_RootStage#0" />
-            <element signature="method#CreateVersuch#0;class#Controller_RootStage#0" />
-            <element signature="method#GetVersuchByTitle#0;class#Controller_RootStage#0" />
-            <element signature="method#LoadAufgaben#0;class#Controller_RootStage#0" />
-            <element signature="method#LoadLoesungen#0;class#Controller_RootStage#0" />
-            <element signature="method#LoadImageByName#0;class#Controller_RootStage#0" />
-            <element signature="method#GetFilepathFromResource#0;class#Controller_RootStage#0" />
           </folding>
         </state>
       </provider>
@@ -557,28 +540,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#706#707#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="method#displayImage#0;class#Controller_Tab#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Layout_Tab.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Layout_RootStage.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="133" selection-start-line="50" selection-start-column="133" selection-end-line="50" selection-end-column="133" />
         </state>
       </provider>
     </entry>
@@ -595,8 +556,6 @@
           <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -606,8 +565,8 @@
         <state relative-caret-position="493">
           <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
           <folding>
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#144#145#0" expanded="true" />
+            <element signature="e#181#182#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -618,17 +577,6 @@
           <caret line="61" column="63" lean-forward="true" selection-start-line="61" selection-start-column="63" selection-end-line="61" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="n#!!doc;n#DATAPATH#0;n#Controller_RootStage#0" />
-            <element signature="method#initialize#0;class#Controller_RootStage#0" />
-            <element signature="method#CreateTab#0;class#Controller_RootStage#0" />
-            <element signature="method#CreateMenuHandlers#0;class#Controller_RootStage#0" />
-            <element signature="method#LoadVersuchsNamen#0;class#Controller_RootStage#0" />
-            <element signature="method#CreateVersuch#0;class#Controller_RootStage#0" />
-            <element signature="method#GetVersuchByTitle#0;class#Controller_RootStage#0" />
-            <element signature="method#LoadAufgaben#0;class#Controller_RootStage#0" />
-            <element signature="method#LoadLoesungen#0;class#Controller_RootStage#0" />
-            <element signature="method#LoadImageByName#0;class#Controller_RootStage#0" />
-            <element signature="method#GetFilepathFromResource#0;class#Controller_RootStage#0" />
           </folding>
         </state>
       </provider>
@@ -643,31 +591,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Layout_RootStage.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Controller_RootStage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="n#!!doc;n#DATAPATH#0;n#Controller_RootStage#0" />
-            <element signature="method#initialize#0;class#Controller_RootStage#0" />
-            <element signature="method#CreateTab#0;class#Controller_RootStage#0" />
-            <element signature="method#CreateMenuHandlers#0;class#Controller_RootStage#0" />
-            <element signature="method#LoadVersuchsNamen#0;class#Controller_RootStage#0" />
-            <element signature="method#CreateVersuch#0;class#Controller_RootStage#0" />
-            <element signature="method#GetVersuchByTitle#0;class#Controller_RootStage#0" />
-            <element signature="method#LoadAufgaben#0;class#Controller_RootStage#0" />
-            <element signature="method#LoadLoesungen#0;class#Controller_RootStage#0" />
-            <element signature="method#LoadImageByName#0;class#Controller_RootStage#0" />
-            <element signature="method#GetFilepathFromResource#0;class#Controller_RootStage#0" />
           </folding>
         </state>
       </provider>
@@ -679,63 +608,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Layout_Settings.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+    <entry file="file://$PROJECT_DIR$/src/sample/Aufgabe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="e#144#145#0" expanded="true" />
+            <element signature="e#181#182#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Versuch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        <state relative-caret-position="510">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#Versuch#0;class#Versuch#0" />
-            <element signature="method#Versuch#1;class#Versuch#0" />
-            <element signature="method#getParentAufgabeByTitle#0;class#Versuch#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ParentAufgabe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getChildByTitle#0;class#ParentAufgabe#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Aufgabe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="68" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
-          <folding>
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#288#289#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/tasks.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ChildAufgabe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#checkLoesung#0;class#ChildAufgabe#0" />
           </folding>
         </state>
       </provider>
@@ -750,52 +639,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Layout_Tab.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller_Tab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="74" column="63" selection-start-line="74" selection-start-column="63" selection-end-line="74" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/ParentAufgabe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Layout_RootStage.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="45" column="25" lean-forward="true" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+        <state relative-caret-position="425">
+          <caret line="46" column="25" lean-forward="true" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/tasks.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller_Tab.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/ChildAufgabe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#706#707#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="method#displayImage#0;class#Controller_Tab#0" />
-          </folding>
+        <state relative-caret-position="459">
+          <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Controller_RootStage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="267" column="5" lean-forward="true" selection-start-line="267" selection-start-column="5" selection-end-line="267" selection-end-column="5" />
+        <state relative-caret-position="717">
+          <caret line="305" column="5" lean-forward="true" selection-start-line="305" selection-start-column="5" selection-end-line="305" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="n#!!doc;n#DATAPATH#0;n#Controller_RootStage#0" />
-            <element signature="method#initialize#0;class#Controller_RootStage#0" />
-            <element signature="method#CreateTab#0;class#Controller_RootStage#0" />
-            <element signature="method#CreateMenuHandlers#0;class#Controller_RootStage#0" />
-            <element signature="method#LoadVersuchsNamen#0;class#Controller_RootStage#0" />
-            <element signature="method#CreateVersuch#0;class#Controller_RootStage#0" />
-            <element signature="method#GetVersuchByTitle#0;class#Controller_RootStage#0" />
-            <element signature="method#LoadAufgaben#0;class#Controller_RootStage#0" />
-            <element signature="method#LoadLoesungen#0;class#Controller_RootStage#0" />
-            <element signature="method#LoadImageByName#0;class#Controller_RootStage#0" />
-            <element signature="method#GetFilepathFromResource#0;class#Controller_RootStage#0" />
           </folding>
         </state>
       </provider>

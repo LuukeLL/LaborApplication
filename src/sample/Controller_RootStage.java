@@ -8,6 +8,7 @@ import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
+import org.w3c.dom.Text;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -24,6 +25,7 @@ public class Controller_RootStage {
     // region Class Members
     private String DATAPATH;
     private List<Versuch> versuche;
+    private Versuch currentVersuch;
     private List<Controller_Tab> myTabController;
     // endregion
 
@@ -111,10 +113,15 @@ public class Controller_RootStage {
                             myTabController.clear();                    // Leere die TabController liste
 
 
+
                             // Erstelle für jede Aufgabe einen Tab
                             for(ParentAufgabe PA : GetVersuchByTitle(((MenuItem) source).getText()).getParentAufgaben()){
                                 CreateTab(PA);
                             }
+
+                            System.out.println("Selected: " + GetVersuchByTitle(((MenuItem) source).getText()).getTitle());
+                            currentVersuch = GetVersuchByTitle(((MenuItem) source).getText());
+
                         } catch(Exception e){
                             System.out.println("Fehler beim erstellen des Tabs!\n" + e.toString());
                         }
@@ -213,8 +220,10 @@ public class Controller_RootStage {
             String sCurrentLine;
             List<String> metaSplitList;
 
+            System.out.println(aVersuch.getTitle());
 
             for(ParentAufgabe currentPA : aVersuch.getParentAufgaben()){                  // Suche für jede Aufgabe nach Loesung
+                System.out.println(currentPA.getTitle());
                 while ((sCurrentLine = br.readLine()) != null){
                     if(sCurrentLine.contains(aVersuch.getTitle())                  // Aktueller Versuch
                             && sCurrentLine.contains("TASK")                // Zeile beschreibt Aufgabe
@@ -222,13 +231,20 @@ public class Controller_RootStage {
                             && sCurrentLine.contains(currentPA.getTitle())){ // Zeile gibt informationen über Aufgabe
 
                         metaSplitList = Arrays.asList(sCurrentLine.split(","));
-
+                        System.out.println(metaSplitList.get(LOESUNG));
 
                         // Füge ChildAufgaben zu der ParentAufgabe hinzu
                         ChildAufgabe newChild = new ChildAufgabe(metaSplitList.get(TITLE));
+
+                        // TODO Füge mehr als eine Lösung hinzu
+                        newChild.addLoesung(metaSplitList.get(LOESUNG));
+
+                        /*
                         for(int index = LOESUNG; index < (metaSplitList.size()-1); index++){
                             newChild.addLoesung(metaSplitList.get(index));
+                            System.out.println(metaSplitList.get(index));
                         }
+                        */
                         currentPA.AddChildAufgabe(newChild);
 
                     }
@@ -264,12 +280,29 @@ public class Controller_RootStage {
 
     @FXML
     protected void onBTN_Check_Clicked(){
-        
+        int currentTabIndex = tp_main.getSelectionModel().getSelectedIndex();
+        List<TextField> currentInputFields = myTabController.get(currentTabIndex).getInputFields();
+
+        for(ChildAufgabe currentChild : currentVersuch.getParentAufgaben().get(currentTabIndex).getChilds()){
+            for(TextField currentIPF : currentInputFields){
+                if(currentChild.checkLoesung(currentIPF.getText())){
+                    currentIPF.setStyle("-fx-control-inner-background: #9be29a");
+                } else {
+                    currentIPF.setStyle("-fx-control-inner-background: #e29a9a");
+                }
+            }
+        }
     }
 
     @FXML
     protected void onBTN_Reset_Clicked(){
+        int currentTabIndex = tp_main.getSelectionModel().getSelectedIndex();
+        List<TextField> currentInputFields = myTabController.get(currentTabIndex).getInputFields();
 
+        for(TextField currentIPF : currentInputFields){
+            currentIPF.setText("");
+            currentIPF.setStyle("");
+        }
     }
 
 }

@@ -69,4 +69,8 @@ public class Controller_Tab implements Initializable {
 
         ap_inputMask.getChildren().setAll(tfBox);
     }
+
+    public ParentAufgabe getParentAufgabe(){return tabAufgabe;}
+
+    public List<TextField> getInputFields(){return inputFields;}
 }

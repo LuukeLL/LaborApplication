@@ -9,7 +9,7 @@ public class ChildAufgabe extends Aufgabe {
 
     private List<String> loesungen;
     private Aufgabe parentAufgabe;      // TODO Maybe not usefull
-    private TextField eingabeTF;
+    private TextField eingabeTF;        // TODO Maybe not usefull
 
     public ChildAufgabe(String newTitle){
         super(newTitle);

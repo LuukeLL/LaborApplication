@@ -10,14 +10,13 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller_RootStage">
    <children>
-      <BorderPane layoutX="76.0" layoutY="26.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" fx:id="bp_main">
+      <BorderPane fx:id="bp_main" layoutX="76.0" layoutY="26.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <top>
-            <MenuBar BorderPane.alignment="CENTER" fx:id="mb_menu">
+            <MenuBar fx:id="mb_menu" BorderPane.alignment="CENTER">
               <menus>
-                <Menu mnemonicParsing="false" text="Versuche" fx:id="menu_Versuche">
+                <Menu fx:id="menu_Versuche" mnemonicParsing="false" text="Versuche">
                   <items>
 
                   </items>
@@ -40,15 +39,15 @@
                <children>
                   <HBox alignment="CENTER" layoutX="140.0" layoutY="-31.0" prefHeight="100.0" prefWidth="200.0" spacing="100.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
                      <children>
-                        <Button onMouseClicked="#onBTN_Check_Clicked" mnemonicParsing="false" text="Check" fx:id="btn_check"/>
-                        <Button onMouseClicked="#onBTN_Reset_Clicked" mnemonicParsing="false" text="Button" fx:id="btn_reset"/>
+                        <Button fx:id="btn_reset" mnemonicParsing="false" onMouseClicked="#onBTN_Reset_Clicked" text="Zurücksetzen" />
+                        <Button fx:id="btn_check" mnemonicParsing="false" onMouseClicked="#onBTN_Check_Clicked" text="Überprüfen" />
                      </children>
                   </HBox>
                </children>
             </AnchorPane>
          </bottom>
          <center>
-            <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER" fx:id="tp_main">
+            <TabPane fx:id="tp_main" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
               <tabs>
                 <Tab text="Untitled Tab 1">
                   <content>
