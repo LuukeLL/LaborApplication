@@ -18,6 +18,7 @@ public class ParentAufgabe extends Aufgabe {
     public void AddChildAufgabe(ChildAufgabe newChild){
         childAufgaben.add(newChild);
     }
+
     public ChildAufgabe getChildByTitle(String childTitle){
         for(ChildAufgabe aChild : childAufgaben){
             if(aChild.title.equals(childTitle))
@@ -29,6 +30,7 @@ public class ParentAufgabe extends Aufgabe {
     public void setChildAufgaben(List<ChildAufgabe> newChilds){
         this.childAufgaben = newChilds;
     }
+
     public List<ChildAufgabe> getChilds(){
         return childAufgaben;
     }
@@ -36,6 +38,7 @@ public class ParentAufgabe extends Aufgabe {
     public void setImage(Image newimage){
         this.image = newimage;
     }
+
     public Image getImage(){
         return image;
     }

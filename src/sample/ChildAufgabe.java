@@ -17,6 +17,7 @@ public class ChildAufgabe extends Aufgabe {
     }
 
     public List<String> getLoesungen(){ return this.loesungen; }
+
     public void addLoesung(String newLoesung) { this.loesungen.add(newLoesung); }
 
     public boolean checkLoesung(String newTry){
